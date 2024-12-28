@@ -48,9 +48,22 @@ Quản lý danh sách sinh viên với các thuộc tính và phương thức sa
     -Xóa một sinh viên dựa trên ID và hiển thị lại danh sách.
 
     -Sắp xếp danh sách sinh viên theo GPA giảm dần và hiển thị.
-- **Output:**
+- **Output:**Bài tập cung cấp các phương thức (addStudent, removeStudent, findStudentByName) để che giấu chi tiết cài đặt.
+Người dùng chỉ cần gọi các phương thức mà không quan tâm cách chúng hoạt động.
   - Danh sách sinh viên trước và sau mỗi thao tác.
 
 
+## Kiến thức đạt được
+- **Encapsulation (Tính đóng gói):**
+Mỗi đối tượng (Student, StudentManagement) tự quản lý dữ liệu của mình (biến this.students và các phương thức quản lý sinh viên).
+Các dữ liệu bên trong không bị truy cập trực tiếp từ bên ngoài mà thông qua các phương thức.
 
+- **Abstraction (Tính trừu tượng):**
+Bài tập cung cấp các phương thức (addStudent, removeStudent, findStudentByName) để che giấu chi tiết cài đặt.
+Người dùng chỉ cần gọi các phương thức mà không quan tâm cách chúng hoạt động.
+- **Inheritance (Tính kế thừa):**
+Bài này không có kế thừa trực tiếp (như sử dụng extends), nhưng kiến thức về kế thừa sẽ rất hữu ích nếu cần mở rộng lớp Student (ví dụ, GraduateStudent kế thừa từ Student).
+
+- **Polymorphism (Tính đa hình):**
+Nếu mở rộng lớp Student, bạn có thể ghi đè (override) phương thức displayInfo trong các lớp con.
 
