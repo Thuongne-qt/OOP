@@ -40,3 +40,33 @@ Quản lý danh sách sách trong thư viện với các phương thức sau:
 - `returnBook(id)`: Trả sách, thay đổi trạng thái sách thành `"available"` nếu sách đã được mượn.
 - `displayAllBooks()`: Hiển thị tất cả sách trong thư viện.
 - `displayAvailableBooks()`: Hiển thị các sách còn sẵn để mượn (trạng thái `"available"`).
+
+## Yêu cầu mở rộng
+### Lớp `Book` (Sách)
+Thuộc tính mới:
+- `category`: Thể loại của sách (ví dụ: "Science", "Fiction", "History").
+### Lớp `Library` (Thư Viện)
+Phương thức:
+- `addCategory(categoryName)`: Thêm một thể loại sách mới (nếu chưa tồn tại).
+- `filterBooksByCategory(category)`: TLọc và hiển thị danh sách sách theo thể loại.
+- `getStatistics()`: Thống kê số lượng sách theo tình trạng "available" và "borrowed".
+- `viewBorrowHistory()`: Hiển thị lịch sử mượn và trả sách.
+### Lớp `User` 
+Thuộc tính:
+- `id`: ID người dùng.
+- `name`: Tên người dùng.
+- `borrowedBooks`: Danh sách các sách đã mượn.
+
+Phương thức:
+- `borrowBook(bookId, library)`:  Mượn một quyển sách từ thư viện..
+- `returnBook(bookId, library)`: Trả sách cho thư viện.
+### Yêu cầu
+-Thêm người dùng vào hệ thống.
+
+-Quản lý người dùng và theo dõi danh sách sách mà mỗi người dùng đã mượn.
+
+-Cho phép người dùng mượn và trả sách.
+
+-Thống kê số lượng sách theo tình trạng và thể loại.
+
+-Hiển thị lịch sử mượn và trả sách.
